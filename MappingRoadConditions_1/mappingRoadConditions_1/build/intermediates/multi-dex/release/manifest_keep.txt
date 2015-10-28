@@ -1,0 +1,18 @@
+-keep class android.support.multidex.MultiDexApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+-keep class com.mappingroadconditions.ActivityRecognitionIntentService { <init>(); }
+-keep class com.mappingroadconditions.GatherSensorData { <init>(); }
+-keep class com.mappingroadconditions.Alarm { <init>(); }
+-keep class com.mappingroadconditions.MainActivity { <init>(); }
+-keep class com.mappingroadconditions.CongestionMap { <init>(); }
+-keep class com.mappingroadconditions.About { <init>(); }
+-keep class com.mappingroadconditions.PotholesMap { <init>(); }
+-keep class com.mappingroadconditions.SpeedBreakersMap { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}

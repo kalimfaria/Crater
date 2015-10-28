@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="mobileservices-2.0.2-beta">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mappingRoadConditions_1/libs/mobileservices-2.0.2-beta.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/mappingRoadConditions_1/libs/mobileservices-2.0.2-beta-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "22.0.0"
+
+    defaultConfig {
+        applicationId "com.mappingroadconditions"
+        minSdkVersion 18
+        targetSdkVersion 21
+        multiDexEnabled true
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    buildTypes {
+        release {
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+        debug {
+            debuggable true
+        }
+    }
+}
+
+dependencies {
+    compile project(':facebookSDK')
+    compile files('libs/commons-math3-3.4.1.jar')
+    compile files('libs/inf15506.jar')
+    compile files('libs/mobileservices-2.0.2-beta-javadoc.jar')
+    compile files('libs/mobileservices-2.0.2-beta-sources.jar')
+    compile files('libs/mobileservices-2.0.2-beta.jar')
+    compile files('libs/weka.jar')
+    compile 'com.google.code.gson:gson:2.2.2'
+    compile 'com.google.guava:guava:17.0'
+    compile 'com.google.android.gms:play-services:7.0.0'
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.android.support:support-v4:22.0.0'
+}

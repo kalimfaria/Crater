@@ -1,0 +1,58 @@
+-injars /home/faria/AndroidstudioProjects/MappingRoadConditions_1/mappingRoadConditions_1/build/intermediates/multi-dex/release/allclasses.jar
+-outjars /home/faria/AndroidstudioProjects/MappingRoadConditions_1/mappingRoadConditions_1/build/intermediates/multi-dex/release/componentClasses.jar
+
+-libraryjars /home/faria/android-sdks/build-tools/22.0.0/lib/shrinkedAndroid.jar
+
+-forceprocessing
+-dontoptimize
+-dontobfuscate
+-dontpreverify
+-dontwarn
+-printconfiguration /home/faria/AndroidstudioProjects/MappingRoadConditions_1/mappingRoadConditions_1/build/intermediates/multi-dex/release/components.flags
+
+
+-keep class android.support.multidex.MultiDexApplication {
+    <init>();
+    void attachBaseContext(android.content.Context);
+}
+
+-keep class com.mappingroadconditions.ActivityRecognitionIntentService {
+    <init>();
+}
+
+-keep class com.mappingroadconditions.GatherSensorData {
+    <init>();
+}
+
+-keep class com.mappingroadconditions.Alarm {
+    <init>();
+}
+
+-keep class com.mappingroadconditions.MainActivity {
+    <init>();
+}
+
+-keep class com.mappingroadconditions.CongestionMap {
+    <init>();
+}
+
+-keep class com.mappingroadconditions.About {
+    <init>();
+}
+
+-keep class com.mappingroadconditions.PotholesMap {
+    <init>();
+}
+
+-keep class com.mappingroadconditions.SpeedBreakersMap {
+    <init>();
+}
+
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+
+-keep public class * extends java.lang.annotation.Annotation {
+    <fields>;
+    <methods>;
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="title_activity_settings">Settings</string>
+    <string name="pref_header_general">General</string>
+    <string name="pref_title_gprs">Allow GPRS Usage</string>
+    <string name="pref_description_gprs"> Allow the app to use your GPRS connection along with WiFi to upload data to server
+    </string>
+
+
+
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mappingroadconditions.MainActivity" >
+
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Title"
+        android:paddingTop="20dp"
+        android:textColor="#4686A0"
+        android:textSize="18sp"
+        android:layout_margin="10sp"
+        android:text="Sensors or google play services are not available. All of these elements are necessary to make the app run properly. \n\nPlease try installing the app on another device or go to our website http://craters.azurewebsites.net for more information." />
+
+
+    <ImageView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/craterviwhite"
+
+       />
+
+    <ImageButton
+        android:id="@+id/Facebook"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/biggerfacebookbutton"
+        android:background="@null"/>
+
+
+    <ImageButton
+        android:id="@+id/Google"
+        android:layout_below="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/biggergooglebutton"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="170dp"
+        android:background="@null"/>
+
+
+
+    <Button
+        android:layout_below="@+id/text_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Potholes Near You"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pothole"
+        android:textColor="#FFFFFF"
+        />
+    <Button
+        android:layout_below="@+id/pothole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speedbreakers Near You"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/speedbreaker"
+        android:textColor="#FFFFFF"
+        />
+
+    <Button
+        android:layout_below="@+id/speedbreaker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Traffic Congestion Near You"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/congestion"
+        android:textColor="#FFFFFF"
+        />
+</RelativeLayout>
+    </ScrollView>

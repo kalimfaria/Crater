@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.mappingroadconditions.MainActivity" >
+
+
+    <item android:id="@+id/about"
+        android:icon="@drawable/ic_action_about"
+        android:title="About"
+        android:showAsAction="always|withText"/>
+
+    <group android:checkableBehavior="all">
+        <item android:id="@+id/gprs"
+            android:title="Enable GPRS Usage"
+            android:checked="true"/>
+    </group>
+
+
+</menu>
+<!-- From: file:/home/faria/AndroidstudioProjects/MappingRoadConditions_1/mappingRoadConditions_1/src/main/res/menu/main.xml -->

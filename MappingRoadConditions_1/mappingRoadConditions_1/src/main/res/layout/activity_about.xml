@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+    	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="wrap_content" >
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.mappingroadconditions.About">
+
+    <ImageView
+        android:src="@drawable/ic_action_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/aboutimg"
+        android:layout_toLeftOf="@+id/heading"       />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:text="About Crater"
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4686A0"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:text="Crowd-sensed Application To Estimate Road-conditions"
+        android:id="@+id/longname"
+        android:layout_below="@id/aboutimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4686A0"
+        android:layout_margin="20sp"
+        android:textSize="18sp"
+        android:textStyle="italic"/>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_below="@id/longname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#4686A0"
+        android:layout_margin="20sp"
+        android:text="People who download the app use it to gather information about road conditions while they are in a moving vehicle. This data is uploaded to this website and road conditions are updated accordingly on a daily basis. The project is crowd-sourced; the greater the number of people that use it, the better the accuracy of the information.\n\nThis data can be used by district governments to automatically discover which roads require the most work and allocate funds accordingly.\n\nThis project was enabled by a generous grant from Microsoft Research under the Microsoft Azure for Research program. "/>
+
+
+</RelativeLayout>
+</ScrollView>
